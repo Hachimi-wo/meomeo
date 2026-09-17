@@ -31,7 +31,7 @@ from evaluator import evaluate
 
 
 SEEDS = list(range(10))         
-N_JOBS = -3
+N_JOBS = -1
 FIXED_CV_SEED = 42               
 
 FEATURE_CONFIGS = {
