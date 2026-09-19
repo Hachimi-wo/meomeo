@@ -32,18 +32,12 @@ def run_experiment(label, X_train, y_train, X_val, y_val, X_test, y_test,
         best_est = gs.best_estimator_
 
         # ---- Validation ----
-        if hasattr(best_est, 'decision_function'):
-            val_scores = best_est.decision_function(X_val)
-        else:
-            val_scores = best_est.predict_proba(X_val)[:, 1]
+        val_scores = best_est.predict_proba(X_val)[:, 1]
         val_pred = best_est.predict(X_val)
         val_metrics = evaluate(y_val, val_scores, val_pred)
 
         # ---- Test ----
-        if hasattr(best_est, 'decision_function'):
-            test_scores = best_est.decision_function(X_test)
-        else:
-            test_scores = best_est.predict_proba(X_test)[:, 1]
+        test_scores = best_est.predict_proba(X_test)[:, 1]
         test_pred = best_est.predict(X_test)
         test_metrics = evaluate(y_test, test_scores, test_pred)
 

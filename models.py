@@ -7,6 +7,7 @@ from sklearn.ensemble import RandomForestClassifier
 from sklearn.pipeline import Pipeline
 from sklearn.neighbors import KNeighborsClassifier
 from sklearn.svm import SVC
+from sklearn.calibration import CalibratedClassifierCV
 from xgboost import XGBClassifier
 from imblearn.pipeline import Pipeline as ImbPipeline
 from imblearn.under_sampling import RandomUnderSampler
@@ -23,27 +24,51 @@ def _compute_pos_weight(y_train):
 def get_search_spaces(groups_to_keep, y_train=None, random_state=42):
     groups = get_feature_groups()
     transformers = []
-    for g in groups_to_keep:
-        if g not in groups:
-            continue
-        start, end = groups[g]
+    
+    if 'morgan' in groups_to_keep and 'morgan' in groups:
+        start, end = groups['morgan']
         cols = list(range(start, end))
-        if g == 'desc':
-            scaler = RobustScaler()
-        else:
-            scaler = Pipeline([
-                ('varth', VarianceThreshold(threshold=0.01)),
-                ('scaler', MaxAbsScaler())
+        morgan_pipe = Pipeline([
+            ('imputer', SimpleImputer(strategy='constant', fill_value=0.0)),
+            ('varth', VarianceThreshold(threshold=0.01)),
+            ('scaler', MaxAbsScaler())
+        ])
+        transformers.append(('morgan', morgan_pipe, cols))
+
+    if 'desc' in groups_to_keep and 'desc' in groups:
+        start, end = groups['desc']
+        from featurizer import _init_descriptors, _DESC_NAMES
+        _init_descriptors()
+        discrete_cols = []
+        continuous_cols = []
+        for i, name in enumerate(_DESC_NAMES):
+            idx = start + i
+            if "Count" in name or "Num" in name or "fr_" in name:
+                discrete_cols.append(idx)
+            else:
+                continuous_cols.append(idx)
+        
+        if discrete_cols:
+            disc_pipe = Pipeline([
+                ('imputer', SimpleImputer(strategy='median')),
+                ('scaler', RobustScaler())
             ])
-        transformers.append((f'scaler_{g}', scaler, cols))
+            transformers.append(('desc_disc', disc_pipe, discrete_cols))
+            
+        if continuous_cols:
+            cont_pipe = Pipeline([
+                ('imputer', SimpleImputer(strategy='mean')),
+                ('scaler', RobustScaler())
+            ])
+            transformers.append(('desc_cont', cont_pipe, continuous_cols))
 
     if not transformers:
         raise ValueError("No groups selected.")
+    
     col_transformer = ColumnTransformer(transformers)
 
     common_steps = [
-        ('imputer', SimpleImputer(strategy='mean')),
-        ('scaler', col_transformer),
+        ('preprocessor', col_transformer),
     ]
 
     searches = {}
@@ -51,58 +76,73 @@ def get_search_spaces(groups_to_keep, y_train=None, random_state=42):
 
     # KNN (RandomUnderSampler)
     pipe_knn = ImbPipeline([
-        ('imputer', SimpleImputer(strategy='mean')),
+        ('preprocessor', col_transformer),
         ('rus', RandomUnderSampler(random_state=random_state)),
-        ('scaler', col_transformer),
-        ('clf', KNeighborsClassifier(weights='distance'))
+        ('clf', CalibratedClassifierCV(
+            KNeighborsClassifier(weights='distance'),
+            method='sigmoid',
+            ensemble=False
+        ))
     ])
     param_knn = {
-        'clf__n_neighbors': list(range(3, 15)),
-        'clf__p': [1, 2],
+        'clf__estimator__n_neighbors': list(range(3, 15)),
+        'clf__estimator__p': [1, 2],
     }
     searches['KNN'] = (pipe_knn, param_knn)
 
     # SVM
     pipe_svm = Pipeline(common_steps + [
-        ('clf', SVC(kernel='rbf', random_state=random_state, probability=False))
+        ('clf', CalibratedClassifierCV(
+            SVC(kernel='rbf', random_state=random_state),
+            method='sigmoid',
+            ensemble=False
+        ))
     ])
     param_svm = {
-        'clf__C': [0.001, 0.01, 0.1, 1, 10, 100, 1000],
-        'clf__gamma': [0.001, 0.01, 0.1, 1, 10, 100, 1000],
-        'clf__class_weight': [None, 'balanced'],
+        'clf__estimator__C': [0.001, 0.01, 0.1, 1, 10, 100, 1000],
+        'clf__estimator__gamma': [0.001, 0.01, 0.1, 1, 10, 100, 1000],
+        'clf__estimator__class_weight': [None, 'balanced'],
     }
     searches['SVM'] = (pipe_svm, param_svm)
 
     # Random Forest
     pipe_rf = Pipeline(common_steps + [
-        ('clf', RandomForestClassifier(
-            n_estimators=N_ESTIMATORS,
-            random_state=random_state,
-            n_jobs=1,
-            class_weight='balanced'
+        ('clf', CalibratedClassifierCV(
+            RandomForestClassifier(
+                n_estimators=N_ESTIMATORS,
+                random_state=random_state,
+                n_jobs=1,
+                class_weight='balanced'
+            ),
+            method='isotonic',
+            ensemble=False
         ))
     ])
     param_rf = {
-        'clf__max_depth': [3, 5, 7, 9],
-        'clf__min_samples_split': [2, 4, 6, 8, 10],
-        'clf__max_features': [0.2, 0.4, 0.6, 0.8],
+        'clf__estimator__max_depth': [3, 5, 7, 9],
+        'clf__estimator__min_samples_split': [2, 4, 6, 8, 10],
+        'clf__estimator__max_features': [0.2, 0.4, 0.6, 0.8],
     }
     searches['RandomForest'] = (pipe_rf, param_rf)
 
     # XGBoost
     pipe_xgb = Pipeline(common_steps + [
-        ('clf', XGBClassifier(
-            n_estimators=N_ESTIMATORS,
-            random_state=random_state,
-            n_jobs=1,
-            eval_metric='logloss',
-            scale_pos_weight=spw
+        ('clf', CalibratedClassifierCV(
+            XGBClassifier(
+                n_estimators=N_ESTIMATORS,
+                random_state=random_state,
+                n_jobs=1,
+                eval_metric='logloss',
+                scale_pos_weight=spw
+            ),
+            method='isotonic',
+            ensemble=False
         ))
     ])
     param_xgb = {
-        'clf__learning_rate': [0.0001, 0.001, 0.01, 0.1, 0.2, 0.3],
-        'clf__max_depth': [3, 5, 7, 9],
-        'clf__colsample_bytree': [0.3, 0.5, 0.7, 0.9],
+        'clf__estimator__learning_rate': [0.0001, 0.001, 0.01, 0.1, 0.2, 0.3],
+        'clf__estimator__max_depth': [3, 5, 7, 9],
+        'clf__estimator__colsample_bytree': [0.3, 0.5, 0.7, 0.9],
     }
     searches['XGBoost'] = (pipe_xgb, param_xgb)
 
