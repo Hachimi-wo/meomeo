@@ -114,7 +114,7 @@ def get_search_spaces(groups_to_keep, y_train=None, random_state=42):
                 n_jobs=1,
                 class_weight='balanced'
             ),
-            method='isotonic',
+            method='sigmoid',
             ensemble=False
         ))
     ])
@@ -135,7 +135,7 @@ def get_search_spaces(groups_to_keep, y_train=None, random_state=42):
                 eval_metric='logloss',
                 scale_pos_weight=spw
             ),
-            method='isotonic',
+            method='sigmoid',
             ensemble=False
         ))
     ])
