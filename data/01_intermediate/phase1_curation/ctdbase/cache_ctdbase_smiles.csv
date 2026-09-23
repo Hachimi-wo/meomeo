@@ -1,0 +1,238 @@
+SMILES,Drug_Name
+[OH-].[OH-].[O-][Si]([O-])([O-])O[Si](=O)O[Si]([O-])([O-])O[Si](=O)O[Si]([O-])([O-])O[Si]([O-])([O-])O[Si](=O)O[Si]([O-])([O-])[O-].[Fe+2].[Fe+2].[Fe+2].[Fe+2].[Fe+2].[Fe+2].[Fe+2],"Asbestos, Amosite"
+,Asbestos
+CC1=C2C(C(=O)C3(C(CC4C(C3C(C(C2(C)C)(CC1OC(=O)C(C(C5=CC=CC=C5)NC(=O)OC(C)(C)C)O)O)OC(=O)C6=CC=CC=C6)(CO4)OC(=O)C)O)C)O,Docetaxel
+CCCC(CCC)C(=O)O,Valproic Acid
+C1CNP(=O)(OC1)N(CCCl)CCCl,Cyclophosphamide
+,Carrageenan
+CC1=C(C(CCC1)(C)C)C=CC(=CC=CC(=CC(=O)O)C)C,Tretinoin
+CCC(C)C(C(=O)NC(C(C)O)C(=O)NC(CCC(=O)O)C(=O)NC(CCCNC(=N)N)C(=O)NC(CC1=CC=CC=C1)C(=O)N2CCCC2C(=O)NC(CCCNC(=N)N)C(=O)N3CCCC3C(=O)NC(CC(=O)O)C(=O)NCC(=O)NC(CCCNC(=N)N)C(=O)NC(CCC(=O)O)C(=O)NC(C)C(=O)NC(C(C)C)C(=O)NC(C)C(=O)NC(CC4=CC=C(C=C4)O)C(=O)NC(CCCNC(=N)N)C(=O)NC(CC5=CC=CC=C5)C(=O)NC(CCC(=O)O)C(=O)NC(CCC(=O)O)C(=O)NC(CC(=O)O)C(=O)NC(C(C)CC)C(=O)NC(CC6=CC=CC=C6)C(=O)NCC(=O)NC(CC7=CC=CC=C7)C(=O)N8CCCC8C(=O)NC(CCCCN)C(=O)NC(CC9=CN=CN9)C(=O)NC(CC(C)C)C(=O)NC(CC(C)C)C(=O)NC(C(C)C)C(=O)NC(CC(=O)O)C(=O)NC(CC1=CC=CC=C1)C(=O)NC(CC(C)C)C(=O)NC(CCC(=O)N)C(=O)NC(CO)C(=O)NC(CC(C)C)C(=O)NC(CO)C(=O)O)NC(=O)CNC(=O)C(C(C)CC)NC(=O)C(CC1=CC=CC=C1)NC(=O)C(CCCCN)NC(=O)C(CO)NC(=O)C(CC(=O)N)NC(=O)C(C)NC(=O)C(CCCCN)NC(=O)C(C(C)CC)NC(=O)C(CC1=CC=C(C=C1)O)NC(=O)C(CCC(=O)N)NC(=O)C(CCSC)N,Pertussis Toxin
+CC1=C(C2=C(N1C(=O)C3=CC=C(C=C3)Cl)C=CC(=C2)OC)CC(=O)O,Indomethacin
+CC1(C(N2C(S1)C(C2=O)NC(=O)C(C3=CC=CC=C3)N)C(=O)O)C,Ampicillin
+[O-2].[O-2].[O-2].[As+3].[As+3],Arsenic Trioxide
+C1=CC=NC(=C1)NS(=O)(=O)C2=CC=C(C=C2)N=NC3=CC(=C(C=C3)O)C(=O)O,Sulfasalazine
+O=O,Oxygen
+CC1C(C(CC(O1)OC2CC(CC3=C2C(=C4C(=C3O)C(=O)C5=C(C4=O)C(=CC=C5)OC)O)(C(=O)CO)O)N)O,Doxorubicin
+C1CC(=O)NC(=O)C1N2C(=O)C3=CC=CC=C3C2=O,Thalidomide
+CC(C)(C)C(=O)OCOP(=O)(COCCN1C=NC2=C(N=CN=C21)N)OCOC(=O)C(C)(C)C,adefovir dipivoxil
+,Alkylating Agents
+CCN(CC)CCOC1=CC=C(C=C1)C(=C(C2=CC=CC=C2)Cl)C3=CC=CC=C3,Clomiphene
+CC(=O)N1C2C1C3(C(C4=C(C=C(C=C4OC(=O)C)C=O)N(C2)O3)COC(=O)N)OC(=O)C,FK 973
+C1CCN(CC1)C2=NC(=N)N(C(=C2)N)O,Minoxidil
+C1C(=O)NC(=O)N1N=CC2=CC=C(O2)[N+](=O)[O-],Nitrofurantoin
+,VEP-THP protocol
+CC(C)(C1=CC=C(C=C1)O)C2=CC=C(C=C2)O,bisphenol A
+Cl[Cd]Cl,Cadmium Chloride
+,Particulate Matter
+,Tobacco Smoke Pollution
+C(C(C(C(C(F)(F)S(=O)(=O)O)(F)F)(F)F)(F)F)(C(C(C(F)(F)F)(F)F)(F)F)(F)F,perfluorooctane sulfonic acid
+C1(=O)C(=O)NC(=O)NC1=O,Alloxan
+[As],Arsenic
+[Cd],Cadmium
+,Vehicle Emissions
+O=[Si]=O,Silicon Dioxide
+,Smoke
+,Lipopolysaccharides
+CCO,Ethanol
+[O-][O+]=O,Ozone
+Cl,Hydrochloric Acid
+CCCCCCCCC=CCCCCCCCC(=O)O,Oleic Acid
+,JP8 aviation fuel
+,"Asbestos, Amphibole"
+CCOP(=S)(OCC)OC1=NC(=C(C=C1Cl)Cl)Cl,Chlorpyrifos
+CC(=O)N(CC(CO)O)C1=C(C(=C(C(=C1I)C(=O)NCC(CO)O)I)C(=O)NCC(CO)O)I,Iohexol
+,"plY protein, Streptococcus pneumoniae"
+,Excitatory Amino Acid Agents
+CCCCCC(C=CC1C(CC(C1CC=CCCCC(=O)O)O)O)O,Dinoprost
+S,Hydrogen Sulfide
+CC(=O)OC1=CC=CC=C1C(=O)O,Aspirin
+,polyhexamethyleneguanidine
+CCCCCC=CCC=CCC=CCC=CCCCC(=O)OC(CO)CO,glyceryl 2-arachidonate
+"CCCCCCC(C)(C)C1=CC(=C(C=C1)C2CC(CCC2CCCO)O)O
+CCCCCCC(C)(C)C1=CC(=C(C=C1)C2CC(CCC2CCCO)O)O
+CCCCCCC(C)(C)C1=CC(=C(C=C1)C2CC(CCC2CCCO)O)O","3-(2-hydroxy-4-(1,1-dimethylheptyl)phenyl)-4-(3-hydroxypropyl)cyclohexanol"
+,Silver Compounds
+CC1(C2CCC3(C(C2(CCC1OC4C(C(C(C(O4)C(=O)O)O)O)OC5C(C(C(C(O5)C(=O)O)O)O)O)C)C(=O)C=C6C3(CCC7(C6CC(CC7)(C)C(=O)O)C)C)C)C,Glycyrrhizic Acid
+C1=CC=C2C(=C1)C=CC=C2NC(=S)N,alpha-naphthyl thiourea
+C1CN(C(=N[N+](=O)[O-])N1)CC2=CN=C(C=C2)Cl,imidacloprid
+CC(CC1=CC=CC=C1)NC,Methamphetamine
+CC=C1CC(=C)C(C(=O)OCC2=CCN3C2C(CC3)OC1=O)(CO)O,riddelliine
+[Ni],Nickel
+,Heparin
+C(=O)(Cl)Cl,Phosgene
+,sephadex
+CCCCCC1=CC(=C2C3C=C(CCC3C(OC2=C1)(C)C)C)O,Dronabinol
+C=CCCl,allyl chloride
+CCCCCCCCCC[N+](C)(C)CCCCCCCCCC,didecyldimethylammonium
+,"lipopolysaccharide, Escherichia coli O111 B4"
+ClCl,Chlorine
+[Al+3].[P-3],aluminum phosphide
+,Blood Glucose
+CN(C)CCC=C1C2=CC=CC=C2CCC3=CC=CC=C31,Amitriptyline
+CC1=C(C(=O)C2=C(C1=O)N3CC4C(C3(C2COC(=O)N)OC)N4)N,Mitomycin
+CN1CCCC1C2=CN=CC=C2,Nicotine
+CCN(CC)CC(=O)NC1=C(C=CC=C1C)C,Lidocaine
+C(CCl)SCCCl,Mustard Gas
+CNC1(CCCCC1=O)C2=CC=CC=C2Cl,Ketamine
+Cl[La](Cl)Cl,lanthanum chloride
+[F-].[Na+],Sodium Fluoride
+CC(CC1=CC=CC=C1)N,Amphetamine
+,"lipopolysaccharide, E coli O55-B5"
+CC(C(C1=CC=CC=C1)O)NC,Ephedrine
+CC(C(C)(C)C)OP(=O)(C)F,Soman
+CC(=O)OC1C=CC2C3CC4=C5C2(C1OC5=C(C=C4)OC(=O)C)CCN3C,Heroin
+CCN(CC)C(=S)SSC(=S)N(CC)CC,Disulfiram
+,"Toxins, Biological"
+C=CC=O,Acrolein
+CN(CCCl)CCCl,Mechlorethamine
+"CCCCCC(CCC1C(CC(=O)C1CCCCCCC(=O)O)O)O
+CCCCCC(CCC1C(CC(=O)C1CCCCCCC(=O)O)O)O","13,14-dihydroprostaglandin E1"
+,Antineoplastic Agents
+CC1CC2C3CCC4=CC(=O)C=CC4(C3(C(CC2(C1(C(=O)CO)O)C)O)F)C,Betamethasone
+CCCCN1CCCCC1C(=O)NC2=C(C=CC=C2C)C,Bupivacaine
+,Buthus tamulus insect toxin
+,Cnidarian Venoms
+,Contrast Media
+CN1C2CCC1C(C(C2)OC(=O)C3=CC=CC=C3)C(=O)OC,Crack Cocaine
+CN(CC(=O)O)C(=N)N,Creatine
+C1CN(C(=N1)N)CC(=O)O,cyclocreatine
+CC(=O)NC1=C(C(=C(C(=C1I)C(=O)O)I)NC(=O)C)I,Diatrizoate
+CC(=O)NC1=C(C(=C(C(=C1I)C(=O)O)I)NC(=O)C)I.CNCC(C(C(C(CO)O)O)O)O,Diatrizoate Meglumine
+C1=CC=C2C(=C1)C3=CC=CC=C3S2,dibenzothiophene
+,Ergotamines
+CCNC(C)CC1=CC(=CC=C1)C(F)(F)F,Fenfluramine
+,Fibrinolytic Agents
+,heparin-dihydergot
+F,Hydrofluoric Acid
+CN(C)CCCN1C2=C(CCCCCC2)C3=CC=CC=C31,Iprindole
+CC(C(C1=C(C=CC(=C1)OC)OC)O)N,Methoxamine
+CCC(CO)NC(=O)C1CN(C2CC3=CNC4=CC=CC(=C34)C2=C1)C,Methylergonovine
+CCOC(=O)NC1=CC2=C(C=C1)SC3=CC=CC=C3N2C(=O)CCN4CCOCC4,Moricizine
+C1CN=C(N1)CC2=CC=CC3=CC=CC=C32,Naphazoline
+[N+](=O)(O)[O-],Nitric Acid
+CC(C(C1=CC(=C(C=C1)O)O)O)N,Nordefrin
+C[S+](C)C.C(C(=O)[O-])NCP(=O)(O)O,N-(phosphonomethyl)glycine trimethylsulfonium salt
+C[Si]1(O[Si](O[Si](O[Si](O1)(C)C)(C)C)(C)C)C,octamethylcyclotetrasiloxane
+,Safflower Oil
+,"S-(N,N-diethylaminoethyl) isobutyl methylphosphothiolate"
+C(=S)(N)N,Thiourea
+CC(C)(C)NCC(COC1=NSN=C1N2CCOCC2)O,Timolol
+C1(=O)NC(=O)N(C(=O)N1Cl)Cl,troclosene
+[N]=O,Nitric Oxide
+C(C(C(C(C(CO)O)O)O)O)O,Mannitol
+CC(C)(C)NCC(C1=CC(=CC(=C1)O)O)O,Terbutaline
+CN(C)CCC(C1=CC=C(C=C1)Cl)C2=CC=CC=N2,Chlorpheniramine
+C1CCN(CC1)CCOC2=CC=C(C=C2)C(=O)C3=C(SC4=C3C=CC(=C4)O)C5=CC=C(C=C5)O.Cl,Raloxifene Hydrochloride
+C(C=O)C=O,Malondialdehyde
+CC1CC2C(CCC3(C2CCC3(C(=O)C)OC(=O)C)C)C4(C1=CC(=O)CC4)C,Medroxyprogesterone Acetate
+"CCCCCC(C=CC1C2CC(C1CC=CCCCC(=O)O)CO2)O
+CCCCCC(C=CC1C2CC(C1CC=CCCCC(=O)O)CO2)O","15-Hydroxy-11 alpha,9 alpha-(epoxymethano)prosta-5,13-dienoic Acid"
+CC(C1CCC(C(O1)OC2C(CC(C(C2O)OC3C(C(C(CO3)(C)O)NC)O)N)N)N)NC,Gentamicins
+CC12CCC3C(C1CCC2(C#C)O)CCC4=CC(=O)CCC34,Norethindrone
+,Free Radicals
+CCC1C(=O)N(CC(=O)N(C(C(=O)NC(C(=O)N(C(C(=O)NC(C(=O)NC(C(=O)N(C(C(=O)N(C(C(=O)N(C(C(=O)N(C(C(=O)N1)C(C(C)CC=CC)O)C)C(C)C)C)CC(C)C)C)CC(C)C)C)C)C)CC(C)C)C)C(C)C)CC(C)C)C)C,Cyclosporine
+CC12CCC3C(C1CCC2(C#C)O)CCC4=C3C=CC(=C4)O,Ethinyl Estradiol
+CCC(=C(C1=CC=CC=C1)C2=CC=C(C=C2)OCCN(C)C)C3=CC=CC=C3,Tamoxifen
+CCC(=C(CC)C1=CC=C(C=C1)O)C2=CC=C(C=C2)O,Diethylstilbestrol
+CCC12CC(=C)C3C(C1CCC2(C#C)O)CCC4=CCCCC34,Desogestrel
+CN1CC(=O)N2C(C1=O)CC3=C(C2C4=CC5=C(C=C4)OCO5)NC6=CC=CC=C36,Tadalafil
+CC1=C2C(C(=O)C3(C(CC4C(C3C(C(C2(C)C)(CC1OC(=O)C(C(C5=CC=CC=C5)NC(=O)C6=CC=CC=C6)O)O)OC(=O)C7=CC=CC=C7)(CO4)OC(=O)C)O)C)OC(=O)C,Paclitaxel
+C1=CN(C=N1)CC(O)(P(=O)(O)O)P(=O)(O)O,Zoledronic Acid
+CC1=C(C2=C(CCC(O2)(C)CCCC(C)CCCC(C)CCCC(C)C)C(=C1O)C)C,Vitamin E
+CC1CC2C3CCC4=CC(=O)C=CC4(C3(C(CC2(C1(C(=O)CO)O)C)O)F)C,Dexamethasone
+,alcoholic prolamine solution
+,Antipsychotic Agents
+,Arteparon
+C(C(C(C(C(C(=O)[O-])O)O)O)O)O.C(C(C(C(C(C(=O)[O-])O)O)O)O)O.[Ca+2],Calcium Gluconate
+C=C1CSC(N=C1C(=O)O)C(C(=O)O)NC(=O)CCCCC(C(=O)O)N,Cephalosporins
+,"Contraceptives, Oral"
+,"Contraceptives, Oral, Combined"
+,"Contraceptives, Oral, Hormonal"
+,"Contraceptives, Oral, Synthetic"
+CC(=O)C1(CCC2C1(CCC3C2C=C(C4=CC(=O)C5CC5C34C)Cl)C)OC(=O)C,Cyproterone Acetate
+,Dalteparin
+C1CC(N(C1)C(=O)C2CSSCCC(=O)NC(C(=O)NC(C(=O)NC(C(=O)NC(C(=O)N2)CC(=O)N)CCC(=O)N)CC3=CC=CC=C3)CC4=CC=C(C=C4)O)C(=O)NC(CCCN=C(N)N)C(=O)NCC(=O)N,Deamino Arginine Vasopressin
+,Diuretics
+CC12CCC(=O)C=C1C3CC3C4C2CCC5(C4C6CC6C57CCC(=O)O7)C.CC12CCC3C(C1CCC2(C#C)O)CCC4=C3C=CC(=C4)O,drospirenone and ethinyl estradiol combination
+CCC12CCC3C(C1CCC2(C#C)O)CCC4=CC(=O)CCC34.CC12CCC3C(C1CCC2(C#C)O)CCC4=C3C=CC(=C4)O,Ethinyl Estradiol-Norgestrel Combination
+,GABA-B Receptor Agonists
+,Hematinics
+CC1=C(C=CC=C1O)C(=O)NC(CSC2=CC=CC=C2)C(CN3CC4CCCCC4CC3C(=O)NC(C)(C)C)O,Nelfinavir
+,Phenothiazines
+,Polyphosphates
+,Progesterone Congeners
+C[N+](C)(C)CCOC(=O)CCC(=O)OCC[N+](C)(C)C,Succinylcholine
+C1CC(CCC1CN)C(=O)O,Tranexamic Acid
+,VACOP-B protocol
+,"Heparin, Low-Molecular-Weight"
+,Dust
+O.O[Si](O)(O)O.O[Si](O)(O)O.[Mg].[Mg].[Mg],"Asbestos, Serpentine"
+O=[Si]=O,Quartz
+O=S=O,Sulfur Dioxide
+CC1C(=O)OC2CCN3C2C(=CC3)COC(=O)C(C1(C)O)(C)O,Monocrotaline
+CCSCCCl,2-chloroethyl ethyl sulfide
+[Co],Cobalt
+CC(C)CCCCCCOC(=O)C1=CC=CC=C1C(=O)OCCCCCCC(C)C,diisononyl phthalate
+,7-Ala-angiotensin (1-7)
+O=[Ce]=O,ceric oxide
+Cl[Ni]Cl,nickel chloride
+[Si],Silicon
+O[Si](=O)O.O[Si](=O)O.O[Si](=O)O.O[Si](=O)O.O[Si](=O)O.O[Si](=O)O.O[Si](=O)O.O[Si](=O)O.[Na+].[Na+].[Mg+2].[Mg+2].[Mg+2].[Fe+3].[Fe+3],"Asbestos, Crocidolite"
+[O-][Cr](=O)(=O)O[Cr](=O)(=O)[O-].[Na+].[Na+],sodium bichromate
+[O-][As]([O-])[O-],arsenite
+CC(C)CC(C(=O)O)NC(CC1=CN=CN1CC2=CC(=CC(=C2)Cl)Cl)C(=O)O,"2-(1-carboxy-2-(3-(3,5-dichlorobenzyl)-3H-imidazol-4-yl)ethylamino)-4-methylpentanoic acid"
+,Soot
+[Cl-].[Cl-].[Co+2],cobaltous chloride
+[Cr+6],chromium hexavalent ion
+[C],"Nanotubes, Carbon"
+C=O,Formaldehyde
+C1=CC2=C3C(=C1)C=CC4=C(C=CC(=C43)C=C2)[N+](=O)[O-],1-nitropyrene
+N(=O)[O-].[Na+],Sodium Nitrite
+[O-][As]=O.[Na+],sodium arsenite
+,Reactive Oxygen Species
+C1=CC=C2C(=C1)C=CC3=C2C=CC4=CC=CC=C43,chrysene
+[O-2].[Ni+2],nickel monoxide
+O=[Ti]=O,titanium dioxide
+,Air Pollutants
+[Rn],Radon
+[Be],Beryllium
+[NH4+].[O-]Cl(=O)(=O)=O,ammonium perchlorate
+[O-]S(=O)(=O)[O-].[Cu+2],Copper Sulfate
+[Fe],Iron
+,"N-(1,3-dimethylbutyl)-N'-phenyl-p-phenylenediamine quinone"
+[C-]#[Si+],silicon carbide
+[O-2].[O-2].[O-2].[Nd+3].[Nd+3],neodymium oxide
+,Polypropylenes
+,Coal
+CC1=C(N=C(N=C1N)C(CC(=O)N)NCC(C(=O)N)N)C(=O)NC(C(C2=CN=CN2)OC3C(C(C(C(O3)CO)O)O)OC4C(C(C(C(O4)CO)O)OC(=O)N)O)C(=O)NC(C)C(C(C)C(=O)NC(C(C)O)C(=O)NCCC5=NC(=CS5)C6=NC(=CS6)C(=O)NCCCNCCCCN)O,bleomycetin
+,"Air Pollutants, Occupational"
+,RCF-1 fiber
+CN=C=O,methyl isocyanate
+CN(C)C1C2CC3CC4=C(C=CC(=C4C(=C3C(=O)C2(C(=C(C1=O)C(=O)N)O)O)O)O)N(C)C,Minocycline
+C1CC(C1)(C(=O)O)C(=O)O.[NH2-].[NH2-].[Pt+2],Carboplatin
+,Environmental Pollutants
+,Polystyrenes
+C1=CC=CC=C1,Benzene
+,Ovalbumin
+C1CN(P(=O)(OC1)N(CCCl)CCCl)CCCl,trofosfamide
+O.[OH-].[O].[O-][Si](=O)[O-].[Mg].[Al].[Fe],vermiculite
+CC(C)(C=NOC(=O)NC)SC,Aldicarb
+C1=CC(=CC=C1C(C2=CC=C(C=C2)Cl)C(Cl)(Cl)Cl)Cl,DDT
+C1(C(C(C(C(C1Cl)Cl)Cl)Cl)Cl)Cl,Hexachlorocyclohexane
+,"Hydrocarbons, Chlorinated"
+,Pesticides
+,Antigens
+CCCC1=CC(=O)NC(=S)N1,Propylthiouracil
+CC1C=CC=CC=CC=CC=CC=CC=CC(CC2C(C(CC(O2)(CC(CC(C(CCC(CC(CC(=O)OC(C(C1O)C)C)O)O)O)O)O)O)O)C(=O)O)OC3C(C(C(C(O3)C)O)N)O.CC(CCC(=O)[O-])C1CCC2C1(C(CC3C2CCC4C3(CCC(C4)O)C)O)C.[Na+],"amphotericin B, deoxycholate drug combination"
+COCCOC1=C(C=C2C(=C1)C(=NC=N2)NC3=CC=CC(=C3)C#C)OCCOC.Cl,Erlotinib Hydrochloride
+,Mineral Oil
+,oligo(2-(2-ethoxy)-ethoxyethyl)guanidinium-chloride
+CC(C)CCCC(C)CCCC(C)CCCC(=CCO)C,Phytol
+[O-][Cr](=O)(=O)[O-].[Zn+2],zinc chromate
+,Silicates
+,Carbon Fiber
+O=[Mn]=O,manganese dioxide
+CC1=CC(=NO1)NS(=O)(=O)C2=CC=C(C=C2)N.COC1=CC(=CC(=C1OC)OC)CC2=CN=C(N=C2N)N,"Trimethoprim, Sulfamethoxazole Drug Combination"
+CN(C)CCN(CC1=CC=CC=C1)C2=CC=CC=N2,Tripelennamine
+,Interferon-alpha
+,Silicon Compounds

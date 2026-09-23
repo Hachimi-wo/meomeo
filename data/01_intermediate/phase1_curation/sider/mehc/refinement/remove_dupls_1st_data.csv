@@ -1,0 +1,13 @@
+SMILES,index,Label_Pleural,Label_Embolism,Label_ILD,Label_Edema,is_perfect_dups,indexes
+CCOC(=O)C1(C#N)C(c2ccc(OC)cc2)C1S(=O)(=O)CC,75,0,1,0,0,False,"[74, 75]"
+Cc1ccc2c(c1)C(NC(=O)CCSc1ccccc1)CC(C)(C)O2,80,0,1,0,0,False,"[79, 80]"
+O=C1CC(C(=O)N2CC3CC(C2)c2cccc(=O)n2C3)CN1Cc1ccccc1,87,0,1,0,0,False,"[86, 87]"
+CCS(=O)(=O)C1C(c2ccc(OC)cc2)C1(N)CN,89,0,0,0,1,False,"[88, 89]"
+CCOCC1(CN)C(c2ccc(OC)cc2)C1S(=O)(=O)CC,92,1,0,0,0,False,"[91, 92]"
+COc1ccc(C2C(S(=O)(=O)c3ccccc3)C2(N)C#N)cc1,106,0,0,0,1,False,"[105, 107]"
+O=C(CCc1nc(-c2ccncc2)no1)NCC1CC2C=CC1C2,136,1,0,0,0,False,"[135, 136]"
+COCCn1cc(CCC(=O)N2CCCC3=CC4CC(CN5CCCCC45)C32)c2ccccc21,170,1,0,0,0,False,"[169, 171]"
+CS(=O)(=O)C1C(c2ccc3c(c2)OCO3)C1(C#N)C=O,183,0,1,0,1,False,"[182, 184]"
+CCOCC1(CN)C(c2ccc3c(c2)OCO3)C1S(C)(=O)=O,190,0,0,0,1,False,"[189, 190]"
+CCC(NC(=O)C(C)Sc1ccc(C)cc1)c1ccc(C)cc1C,206,0,1,0,0,False,"[205, 207, 208]"
+CCC(C(=O)Nc1ccc(Cl)cc1)N(c1cc(C)cc(C)c1)S(C)(=O)=O,256,0,0,0,1,False,"[255, 256]"
